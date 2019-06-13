@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<div>
+			input something here
+			<hr/>
+			<form action="/insert_item" method="POST">
+			<input placeholder="enter type of item" name="type"/>
+			<input placeholder="enter name of item" name="name"/>
+			<button>submit</button>
+			</form>
+			
+			<hr>
+			
+			<form class="todo-form" ng-submit="addTodo()">
+						<input class="new-todo" placeholder="What needs to be done?" ng-model="newTodo" ng-disabled="saving" autofocus>
+			</form>
+		</div>
+		
+		<script src="../node_modules/angular/angular.js"></script>
+		<script src="../js/controllers/todoCtrl.js"></script>
+	</body>
+</html>
